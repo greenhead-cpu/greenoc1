@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>你头上的那抹绿的oc网站</title>
+    <style>  
+      body {
+        margin: 0;
+        display:flex;
+        flex-direction:column;
+        min-height:100vh;
+      }
+    </style>
+  </head>
+  <body>
+     <div style="
+          background-color:#FFCCCC;
+          text-align: center;
+          padding:40px;"
+>
+    <p>你头上的那抹绿的oc</p>
+      <img src="1.jpg" alt="oc" width="80px" height="80px">
+     </div>
+      <div style="
+           display:flex;
+           align-items:flex-start;
+           margin:20px;
+           gap:20px;
+           ">
+       <div style="
+           width:310px;
+           flex-shrink:0;
+           background-color:#FFC0CB;
+           padding:10px;
+           box-sizing:border-box;
+           border-radius:10px;
+">
+          <img src="2.jpg"alt="oc1" class="zoomable" style="
+              width: 100%;
+              height:auto;
+              display:block;
+              margin:0 auto; 
+              " >     
+</div>
+          <div style="
+           width:310px;
+           flex-shrink:0;
+           background-color:#FFC0CB;
+           padding:10px;
+           box-sizing:border-box;
+           border-radius:10px;
+">
+          <img src="6.jpg" alt="oc1" class="zoomable"  style="
+              width: 100%;
+              height:auto;
+              display:block;
+              margin:0 auto; 
+              " >     
+</div>
+       <div style="
+           flex-grow:1;
+           padding:15px;
+           line-height:1.7;
+           background-color:#FFB6C1;
+           flex-shrink:0; 
+">
+        <p> 假设这是一个我oc的背景故事介绍</p>
+        <p> 我们必须说点什么让这里看起来很充实</p>
+        <p>每天来一段原神摇好通透 </p>
+        <p>OS:这个颜色好丑 </p>
+        <p> 换了一个颜色感觉好多了</p>
+      </div>
+      <div style="
+           display:flex;
+           gap:20px;
+           flex-shrink:0;"> 
+        <div style="
+          display:flex;
+          flex-direction: column;
+          gap:20px;
+          width: 310px;
+        ">
+         <div style="
+              width:310px;
+              flex-shrink:0;
+              background-color:#FFC0CB;
+              padding:10px;
+              box-sizing:border-box;
+              border-radius:10px;
+    ">
+              <img src="4.jpg"alt="oc1" class="zoomable" style="
+                  width: 100%;
+                  height:auto;
+                  display:block;
+                  margin:0 auto; 
+                  " > 
+          </div> 
+          <div style="
+              width:310px;
+              flex-shrink:0;
+              background-color:#FFC0CB;
+              padding:10px;
+              box-sizing:border-box;
+              border-radius:10px;
+    ">
+            <p onclick="openinfomodal('4.jpg','这是一个oc的起源故事。很明显刚刚这一句话是ai给我加的 ,这个软件好像有ai辅助, 会自动识别你的其他内容,比如说现在,这行代码后面跟着一个点击查看oc的注释,方便倒是挺方便的,就是感觉有点恐怖,感觉自己被ai看透了')"style="
+                cursor:pointer;
+                color:#fff;
+                font-weight:bold;
+                margin:0;
+            ">
+              起源</p> 
+          </div>
+        </div>
+        <div style="
+          display:flex;
+          flex-direction: column;
+          gap:20px;
+          width:310px;
+        ">
+         <div style="
+              width:310px;
+              flex-shrink:0;
+              background-color:#FFC0CB;
+              padding:10px;
+              box-sizing:border-box;
+              border-radius:10px;
+    ">
+              <img src="5.jpg"alt="oc1" class="zoomable" style
+="
+                  width: 100%;
+                  height:auto;
+                  display:block;
+                  margin:0 auto; 
+                  " >
+           </div>
+           <div style="
+              width:310px ;
+              flex-shrink:0;
+              background-color:#FFC0CB;
+              padding:10px;
+              box-sizing:border-box;
+              border-radius:10px;
+    ">
+            <p onclick="openinfomodal('5.jpg','好了，现在该进入第二部分了,其实这个部分是用来写oc的成长故事的,从这个出生到成长什么的。但是很明显啊主播这个oc是小某书三块钱买的,所以没什么背景故事。不过没背景故事做出来好像确实不太好看,所以我打算等弄完了让deep seek跑一个出来')"style="
+                cursor:pointer;
+                color:#fff;
+                font-weight:bold;
+                margin:0;
+            ">
+            成长</p>
+          </div>
+      </div>
+</div></div>
+            <div style="
+          background-color:#FFCCCC;
+          text-align: center;
+          padding:40px;
+          margin-top:auto; 
+          flex-shrink:0;"
+>
+         <p>版权声明：本页面所有创作归你头上的那抹绿个人所有</p>
+         <p> 关联网址：</p>
+          <a href="default.htm">
+               https://space.bilibili.com
+           </a>
+           </div>
+    <div id="imagemodel" style="
+        display:none;
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-color:rgba(0,0,0,0.8);
+        justify-content:center;
+        align-items:center;
+        z-index:9999;
+        cursor:zoom-out;
+    ">
+        <img id="bigImage" src="" alt="Zoomed Image" style="
+            max-width:90%;
+            max-height:90%;
+            box-shadow:0 0 20px rgba(255,255,255,0.5);
+        ">
+    </div>
+    <script>
+      var zoomableImages = document.querySelectorAll('.zoomable');
+      var imagemodel = document.getElementById('imagemodel'); 
+      var bigImage = document.getElementById('bigImage');
+      zoomableImages.forEach(function(image) {
+          image.onclick = function() {
+              bigImage.src = this.src;
+              imagemodel.style.display = 'flex';
+          };
+      });
+     imagemodel.onclick = function() {
+          imagemodel.style.display = 'none';
+      };
+      function openinfomodal(imageSrc,text){
+        var infomodal = document.getElementById('infomodol');
+        var infomodalImage = document.getElementById('infomodalImage');
+        var infomodalText = document.getElementById('infomodalText');
+        infomodalText.innerText = text;
+        if(imageSrc){
+            infomodalImage.src = imageSrc;
+            infomodalImage.style.display = 'block';
+        } else {
+            infomodalImage.style.display = 'none';
+        }
+        infomodal.style.display = 'flex';
+      }
+      function closeinfomodal(){
+        var infomodal = document.getElementById('infomodol');
+        infomodal.style.display = 'none';
+      }
+    </script> 
+    <div id="infomodol" style="
+        display:none;
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-color:rgba(0,0,0,0.5);
+        justify-content:center;
+        align-items:center;
+        z-index:9999;"
+        onclick="closeinfomodal()"
+        >
+        <div style="
+            background-color:white;
+            width:400px;
+            padding:20px;
+            border-radius:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.3);
+            text-align:center;
+            position:relative;"
+            onclick="event.stopPropagation()"
+            >
+        <span onclick="closeinfomodal()" style="
+            position:absolute;
+            top:10px;
+            right:15px;
+            cursor:pointer;
+            font-size:20px;
+            color:#aaa;
+            font-weight:bold;">&times;</span>
+        <h3 id="infomodalTitle" style="
+            margin-top:0;
+            color:#FFC0CB;
+            ">详情</h3>
+        <img id="infomodalImage" src="" alt="Info Image" style="
+            max-width:100%;
+            max-height:200px;
+            margin:10px 0;
+            border-radius:10px;
+            display:none;
+            ">
+        <p id="infomodalText" style="
+            color:#333;
+            line-height:1.6;
+            margin-bottom:0;
+            text-align:left;
+        "></p>
+      </div>
+    </div>
+  </body>
+</html>
